@@ -1,0 +1,5 @@
+1. create virtual environment.
+2. Install the dependencies  (pip install torch torchvision matplotlib numpy
+)
+3. run dataset_loader.py for chechking dataset load properly or not
+4. run gan.py 
