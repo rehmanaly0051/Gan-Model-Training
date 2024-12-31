@@ -121,6 +121,9 @@ for epoch in range(epochs):
         g_loss.backward()
         optimizer_g.step()
 
+        #For checking the Real and Fake Images Shape.
+        print(f"Epoch {epoch+1}, Batch {i+1}: Real Images Shape {real_images.shape}, Fake Images Shape {fake_images.shape}")
+
         if i % 100 == 0:
             print(f"Epoch [{epoch}/{epochs}] Batch {i}/{len(dataloader)} | D Loss: {d_loss:.4f} | G Loss: {g_loss:.4f}")
 
